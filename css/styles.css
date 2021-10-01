@@ -16,6 +16,14 @@
 	color: #555;
 	padding-top: 55px;
 }
+.smallContainer .move h4 {
+	color: #555;
+	font-size: 1.5rem;
+}
+
+.smallContainer .move img {
+	filter: blur(6px);
+}
 
 .smallContainer h2::after {
 	content: '';
