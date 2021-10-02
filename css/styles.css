@@ -3,6 +3,11 @@
   src: url("/fonts/CircularStd-Book.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "CircularBlack";
+  src: url("/fonts/CircularStd-Black.otf") format("opentype");
+}
+
 *,
 *::after,
 *::before {
@@ -61,6 +66,105 @@ body {
 }
 
 /* 	END NAVBAR SECTION */
+
+/* CTA SECTION */
+
+#call-to-action {
+  padding-top: 70px;
+}
+#call-to-action .container {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#call-to-action .container .text {
+  flex-basis: 50%;
+}
+#call-to-action .container .text .title1 {
+  font-size: 68px;
+  font-family: CircularBlack, sans-serif;
+  color: #2b007b;
+  margin: 1.75rem auto;
+}
+
+#call-to-action .container .text .description {
+  font-size: 18px;
+}
+
+#call-to-action .container .text button {
+  background-color: #2f89fc;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+  margin: 1.5rem auto;
+  font-size: 16px;
+  border: none;  box-shadow: 1px 1px 10px 1px #00000030;
+
+}
+
+#call-to-action .container .note {
+  font-size: 13px;
+  color: #00000090;
+  margin-bottom: 0.5rem;
+}
+
+#call-to-action .container .picture .picture-img {
+  max-width: 500px;
+  box-shadow: 1px 1px 10px 1px #00000090;
+  position: relative;
+  border-radius: 15px;
+  
+}
+
+#call-to-action .container .picture .picture-img img {
+  border-radius: 15px;
+   
+}
+
+#call-to-action .container .picture .picture-img .grey-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(10%, 25%);
+  background-color: #e7e6fc;
+  z-index: -1;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px #00000030;
+
+}
+
+#call-to-action .container .picture .picture-img .picture-quote {
+  background-color: #2b007b;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(-30%, 25%);  box-shadow: 1px 1px 10px 1px #00000030;
+padding: 0.5rem 1rem; 
+
+}
+
+#call-to-action .container .picture .picture-img .picture-quote .quote-mark {
+  transform: translate(-80%, 5%);
+  color:#DD7C1B;
+  box-shadow: 1px 1px 10px 1px #00000030;
+
+}
+
+#call-to-action .container .picture .picture-img .picture-quote .title{
+  color: #FFFFFF80;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+/* END CTA SECTION */
 
 /* PRODUCTS SECTION */
 .smallContainer {
