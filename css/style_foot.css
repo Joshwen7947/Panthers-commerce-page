@@ -8,7 +8,8 @@ footer{
   justify-content: space-around;
   color: white;
   align-self: flex-end;
-
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   }
 
 
@@ -48,8 +49,18 @@ color: grey;
 text-decoration-line: none;
 }
 
+a:active{
+  color: aqua;
+}
+
 a{
-  text-decoration: none;
+  text-decoration: none; 
   color:white;
 }
 
+.icon {
+  display: flex;
+  font-size: 2em;
+  width: 120px;
+  justify-content: space-between;
+}
