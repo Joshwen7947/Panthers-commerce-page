@@ -1,115 +1,278 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+@font-face {
+  font-family: "Circular";
+  src: url("/fonts/CircularStd-Book.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "CircularBlack";
+  src: url("/fonts/CircularStd-Black.otf") format("opentype");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Circular, sans-serif;
+  font-size: 16px;
+}
+
+/* 	NAVBAR SECTION */
+#navbar nav {
+  background-color: #0d67b5;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px 0px #000000;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  margin: auto 0.5rem;
+}
+
+#navbar a:hover {
+  color: #c996cc;
+  text-shadow: 1px 1px #000000;
+}
+
+#navbar nav .container {
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar nav .container .logo {
+  width: 140px;
+}
+
+#navbar nav .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#navbar nav .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 	END NAVBAR SECTION */
+
+/* CTA SECTION */
+
+#call-to-action {
+  padding-top: 70px;
+}
+#call-to-action .container {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#call-to-action .container .text {
+  flex-basis: 50%;
+}
+#call-to-action .container .text .title1 {
+  font-size: 68px;
+  font-family: CircularBlack, sans-serif;
+  color: #2b007b;
+  margin: 1.75rem auto;
+}
+
+#call-to-action .container .text .description {
+  font-size: 18px;
+}
+
+#call-to-action .container .text button {
+  background-color: #2f89fc;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+  margin: 1.5rem auto;
+  font-size: 16px;
+  border: none;  box-shadow: 1px 1px 10px 1px #00000030;
+
+}
+
+#call-to-action .container .note {
+  font-size: 13px;
+  color: #00000090;
+  margin-bottom: 0.5rem;
+}
+
+#call-to-action .container .picture .picture-img {
+  max-width: 500px;
+  box-shadow: 1px 1px 10px 1px #00000090;
+  position: relative;
+  border-radius: 15px;
+  
+}
+
+#call-to-action .container .picture .picture-img img {
+  border-radius: 15px;
+   
+}
+
+#call-to-action .container .picture .picture-img .grey-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(10%, 25%);
+  background-color: #e7e6fc;
+  z-index: -1;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px #00000030;
+
+}
+
+#call-to-action .container .picture .picture-img .picture-quote {
+  background-color: #2b007b;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(-30%, 25%);  box-shadow: 1px 1px 10px 1px #00000030;
+padding: 0.5rem 1rem; 
+
+}
+
+#call-to-action .container .picture .picture-img .picture-quote .quote-mark {
+  transform: translate(-80%, 5%);
+  color:#DD7C1B;
+  box-shadow: 1px 1px 10px 1px #00000030;
+
+}
+
+#call-to-action .container .picture .picture-img .picture-quote .title{
+  color: #FFFFFF80;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+/* END CTA SECTION */
+
 /* PRODUCTS SECTION */
 .smallContainer {
-	text-align: center;
+  text-align: center;
 }
 
 .smallContainer h2 {
-	font-weight: 700;
-	margin-bottom: 80px;
-	line-height: 60px;
-	position: relative;
-	color: #555;
-	padding-top: 55px;
+  font-weight: 700;
+  margin-bottom: 80px;
+  line-height: 60px;
+  position: relative;
+  color: #555;
+  padding-top: 55px;
 }
 .smallContainer .move h4 {
-	color: #555;
-	font-size: 1.5rem;
+  color: #555;
+  font-size: 1.5rem;
 }
 
 .smallContainer .move img {
-	filter: blur(6px);
+  filter: blur(6px);
 }
 
 .smallContainer h2::after {
-	content: '';
-	background: tomato;
-	width: 100px;
-	height: 5px;
-	border-radius: 5px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+  content: "";
+  background: tomato;
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .smallContainer .col-4 {
-	display: inline-block;
-	width: 20%;
-	height: 100px;
-	padding: 20px;
+  display: inline-block;
+  width: 20%;
+  height: 100px;
+  padding: 20px;
 
-	/* border: 2px solid black; */
+  /* border: 2px solid black; */
 }
 
 .smallContainer .col-4 h4 {
-	font-weight: normal;
-	color: #555;
+  font-weight: normal;
+  color: #555;
 }
 .smallContainer .col-4 .name {
-	font-weight: normal;
-	color: #555;
-	font-weight: 700;
-	font-size: 1.25rem;
+  font-weight: normal;
+  color: #555;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .smallContainer .col-4 p {
-	font-size: 1rem;
-	padding: 10px;
-	font-weight: bolder;
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: bolder;
 }
 
 .smallContainer .col-4 img {
-	width: 100%;
-	padding: 10px;
-	border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .smallContainer .col-4 img:hover {
-	cursor: pointer;
-	-webkit-transform: translateY(-10px);
-	transform: translateY(-10px);
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /* TO TURN OFF HOVER TRASLATE Y / SWAP .COL-4 WITH .MOVE */
 .move {
-	display: inline-block;
-	width: 20%;
-	height: 100px;
-	padding: 20px;
+  display: inline-block;
+  width: 20%;
+  height: 100px;
+  padding: 20px;
 }
 .smallContainer .move img {
-	width: 100%;
-	padding: 10px;
-	border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .smallContainer .photo {
-	display: flex;
+  display: flex;
 }
 
 .photo i {
-	position: relative;
-	right: 50px;
-	top: 30px;
-	color: white;
+  position: relative;
+  right: 50px;
+  top: 30px;
+  color: white;
 }
 .smallContainer button {
-	padding: 20px;
-	margin-top: 15px;
-	border: none;
-	border-radius: 25px;
-	font-weight: bolder;
-	background-color: tomato;
-	color: white;
+  padding: 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bolder;
+  background-color: tomato;
+  color: white;
 }
 .smallContainer button:hover {
-	cursor: pointer;
-	opacity: 0.8;
+  cursor: pointer;
+  opacity: 0.8;
 }
